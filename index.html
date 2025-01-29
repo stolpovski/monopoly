@@ -4,12 +4,90 @@
   <meta charset="utf-8">
   <title>Олигархи</title>
   <style>
-    .wrap {
-      background: grey;
+    html {
+      background-color: gray;
+    }
+    .row {
+      display: flex;
+    }
+    .space {
+      background-color: white;
+      box-shadow:0px 0px 0px 1px gray inset;
+      cursor: pointer;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+    }
+    .vertical {
+      width: 60px;
+      height: 100px;
+    }
+    .horizontal {
+      width: 100px;
+      height: 60px;
+    }
+    .log {
+      width: 540px;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">Start</div>
+  <div class="board">
+    <div class="row">
+      <div class="space square"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space square"></div>
+    </div>
+    <div class="row">
+      <div class="space-col">
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+      </div>
+      <div class="log"></div>
+      <div class="space-col">
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+        <div class="space horizontal"></div>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="space square"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space vertical"></div>
+      <div class="space square"></div>
+    </div>
+    
+  </div>
 </body>
 </html>
